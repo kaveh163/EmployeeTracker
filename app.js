@@ -404,7 +404,7 @@ function updateEmployeeRole() {
     
 }
 function join() {
-    const sql = "SELECT a.id, a.first_name, a.last_name, role.title AS title, department.name AS department, role.salary AS salary, CONCAT_WS(' ', b.first_name, b.last_name) AS manager FROM department INNER JOIN role ON department.id = role.department_id INNER JOIN employee AS a ON role.id = a.role_id LEFT JOIN employee AS b ON a.manager_id = b.id";
+    const sql = "SELECT a.id, a.first_name, a.last_name, role.title AS title, department.name AS department, role.salary AS salary, CONCAT_WS(' ', b.first_name, b.last_name) AS manager FROM department INNER JOIN role ON department.id = role.department_id INNER JOIN employee AS a ON role.id = a.role_id LEFT JOIN employee AS b ON a.manager_id = b.id ORDER BY a.id ASC";
     connection.query(sql, function (err, results) {
         if (err) throw err;
         // console.log(results);

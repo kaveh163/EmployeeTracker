@@ -4,7 +4,7 @@ In this project I built a **C**ontent **M**anagment
 **S**ystem for managing a company's employees using node, inquirer, and MySQL. I used the inquirer npm which is a CLI interface for nodejs and the MySQL module which is a MySQL driver to connect to the MySQL database. The MySQL database consists of department, role and employee tables. A command-line interface was built to view, add, and update employees, roles and their department. Also the app includes features like filtering the view of employees by department and manager. The Employee Tracker methods are all promised based.
 
 Below is the snapshot of the project.
-![Database Schema](Assets/employeeTracker.png)
+![Employee Tracker App](Assets/employeeTracker.PNG)
 
 ## Instructions
 
